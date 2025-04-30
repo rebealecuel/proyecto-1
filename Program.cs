@@ -37,10 +37,14 @@ namespace proyecto_1
                         int edad = Convert.ToInt32(Console.ReadLine());
                         Console.WriteLine("Matricula");
                         int Matricula = Convert.ToInt32(Console.ReadLine());
+                        acc.Agregar(Matricula, nombre, edad);
                         break;
                     case Menu.Actualizar:
                         break;
                     case Menu.Eliminar: 
+                        break;
+                    default: 
+                        Console.WriteLine("no valido");
                         break;
                 }
             }
