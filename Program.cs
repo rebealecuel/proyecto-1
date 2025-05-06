@@ -41,8 +41,11 @@ namespace proyecto_1
                         break;
                     case Menu.Actualizar:
                         Console.WriteLine("Dame la matricula a actualizar");
-                        int matriculaactu = Convert.ToInt32(Console.ReadLine());
-                        acc.Actualiza(matriculaactu);
+                        int matri = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Edad");
+                        int eda = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Matricula");
+                        string name = Console.ReadLine();
                         break;
                     case Menu.Eliminar:
                         Console.WriteLine("Dame la matricula a eliminar");
