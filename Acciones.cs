@@ -54,11 +54,13 @@ namespace proyecto_1
             throw new NotImplementedException();
         }
 
+        //SIN USAR
         public List<Alumno> Consultar()
         {
             throw new NotImplementedException();
         }
 
+        //SIN USAR
         public void Actualizar(int matricula, string nombre, int edad)
         {
             throw new NotImplementedException();
