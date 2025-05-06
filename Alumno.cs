@@ -10,11 +10,14 @@ namespace proyecto_1
     {
         public Alumno() { }
 
+        
+
         public Alumno(string nombre, int edad, int matricula) 
             :base (nombre, edad)
         {
-
+            Matricula = matricula;
         }
+       
         public int Matricula { get; set; }
     }
 }

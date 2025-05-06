@@ -11,7 +11,7 @@ namespace proyecto_1
         List<Alumno> Consultar();
         void Agregar(int matricula, string nombre, int edad);
         void Eliminar(int matricula);
-        void Actualizar (int matricula, string nombre, int edad);
+        void Actualiza (int matricula, string nombre, int edad);
         void ExportarExcel();
     }
 }
