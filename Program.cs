@@ -17,7 +17,7 @@ namespace proyecto_1
             Acciones acc = new Acciones();
             while (true)
             {
-                switch (Men())
+                switch (Menun())
                 {
                     case Menu.Consular:
                         var lista = acc.Consulatar();
@@ -25,7 +25,7 @@ namespace proyecto_1
                         {
                             Console.WriteLine("-----------");
                             Console.WriteLine($"Nombre: {l.Nombre}");
-                            Console.WriteLine($"Edad: {l.edad}");
+                            Console.WriteLine($"Edad: {l.Edad}");
                             Console.WriteLine($"Matricula: {l.Matricula}");
                             Console.WriteLine("-----------");
                         }
@@ -41,7 +41,10 @@ namespace proyecto_1
                         break;
                     case Menu.Actualizar:
                         break;
-                    case Menu.Eliminar: 
+                    case Menu.Eliminar:
+                        Console.WriteLine("Dame la matricula a eliminar");
+                        int matriculaeliminar = Convert.ToInt32(Console.ReadLine());
+                        acc.Eliminar(matriculaeliminar);
                         break;
                     default: 
                         Console.WriteLine("no valido");
@@ -50,7 +53,7 @@ namespace proyecto_1
             }
         }
 
-        public Menu Men()
+        static Menu Menun()
         {
             Console.WriteLine("1) Consultar");
             Console.WriteLine("2) Agregar");

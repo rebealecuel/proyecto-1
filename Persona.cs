@@ -13,11 +13,11 @@ namespace proyecto_1
         public Persona(string nombre, int edad)
         {
             Nombre = nombre;
-            this.edad = edad;
+            Edad = edad;
         }
 
         public string Nombre { get; set; }
 
-        public int edad { get; set; }
+        public int Edad { get; set; }
     }
 }
