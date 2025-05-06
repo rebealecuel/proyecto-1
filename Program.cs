@@ -10,7 +10,7 @@ namespace proyecto_1
     {
         public enum Menu
         {
-            Consular = 1, Agregar, Actualizar, Eliminar
+            Consular = 1, Agregar, Actualizar, Eliminar, Salir
         }
         static void Main(string[] args)
         {
@@ -49,6 +49,9 @@ namespace proyecto_1
                         int matriculaeliminar = Convert.ToInt32(Console.ReadLine());
                         acc.Eliminar(matriculaeliminar);
                         break;
+                    case Menu.Salir:
+                        Environment.Exit(0);
+                        break;
                     default: 
                         Console.WriteLine("no valido");
                         break;
@@ -62,6 +65,7 @@ namespace proyecto_1
             Console.WriteLine("2) Agregar");
             Console.WriteLine("3) Actualizar");
             Console.WriteLine("4) ELiminar");
+            Console.WriteLine("5) Salir");
             Menu opc = (Menu)Convert.ToInt32(Console.ReadLine());
 
             return opc;

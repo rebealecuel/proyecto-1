@@ -29,8 +29,12 @@ namespace proyecto_1
                 actu.Edad = Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine("Matricula");
                 actu.Matricula = Convert.ToInt32(Console.ReadLine());
+
+                Console.WriteLine("Actuaizado con exito");
             }
-            
+            else
+                Console.WriteLine("No se encontro la matricula");
+
         }
         public void Agregar(int matricula, string nombre, int edad)
         {
