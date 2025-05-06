@@ -18,9 +18,19 @@ namespace proyecto_1
             return listaalumnos; 
         }
 
-        public void Actualizar(int matricula, string nombre, int edad)
+        public void Actualiza(int matricula)
         {
-            throw new NotImplementedException();
+            var actu = listaalumnos.First(x => x.Matricula == matricula);
+            if (actu != null)
+            {
+                Console.WriteLine("Nueva nombre");
+                actu.Nombre = Console.ReadLine();
+                Console.WriteLine("Edad");
+                actu.Edad = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Matricula");
+                actu.Matricula = Convert.ToInt32(Console.ReadLine());
+            }
+            
         }
         public void Agregar(int matricula, string nombre, int edad)
         {
@@ -41,6 +51,11 @@ namespace proyecto_1
         }
 
         public List<Alumno> Consultar()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Actualizar(int matricula, string nombre, int edad)
         {
             throw new NotImplementedException();
         }

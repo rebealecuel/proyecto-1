@@ -40,6 +40,9 @@ namespace proyecto_1
                         acc.Agregar(Matricula, nombre, edad);
                         break;
                     case Menu.Actualizar:
+                        Console.WriteLine("Dame la matricula a actualizar");
+                        int matriculaactu = Convert.ToInt32(Console.ReadLine());
+                        acc.Actualiza(matriculaactu);
                         break;
                     case Menu.Eliminar:
                         Console.WriteLine("Dame la matricula a eliminar");
